@@ -3,6 +3,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+float relu(float x) {
+    return x > 0 ? x : 0.0;
+}
 
 void lenet(
     float input[784],    // 1 * 1 * 28 * 28
@@ -38,7 +41,7 @@ void lenet(
                             }
                         }
                     }
-                    output_buffer[n][oc][oh][ow] = sum + Conv1_bias[oc];
+                    output_buffer[n][oc][oh][ow] = relu(sum + Conv1_bias[oc]);
                 }
             }
         }
