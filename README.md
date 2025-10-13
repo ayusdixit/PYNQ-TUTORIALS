@@ -1,0 +1,1 @@
+This repository demonstrates how to run a simple Neural Network (NN) model on the PYNQ platform. The PYNQ platform is based on the Xilinx board, providing an efficient environment for AI and FPGA-based acceleration.
